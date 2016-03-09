@@ -55,6 +55,17 @@ controller.hears(['attachment'], ['direct_message', 'direct_mention'], function 
     text: text,
     color: '#7CD197'
   }]
+  
+  controller.hears(['lunch'], ['direct_message', 'direct_mention'], function (bot, message) {
+  var text = 'Här är dagens lunch :pizza: :thumbsup:'
+  var attachments = [{
+    fallback: text,
+    pretext: 'Här är dagens lunch :pizza: :thumbsup:',
+    title: 'Partymakarna.',
+    title_link: 'https://quad.nu/lab/slack/lunch.php',
+    text: text,
+    color: '#7CD197'
+  }]
 
   bot.reply(message, {
     attachments: attachments
