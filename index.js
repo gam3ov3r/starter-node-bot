@@ -62,6 +62,7 @@ controller.hears(['attachment'], ['direct_message', 'direct_mention'], function 
     fallback: text,
     pretext: 'Här är dagens lunch :pizza: :thumbsup:',
     title: 'Partymakarna.',
+    image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
     title_link: 'https://quad.nu/lab/slack/lunch.php',
     text: text,
     color: '#7CD197'
